@@ -1,0 +1,41 @@
+*{
+    font-family: "Raleway", serif;
+}
+
+.heading{
+    font-family: "Cormorant Garamond", serif;
+
+}
+
+.footer-section{
+  background: url(./assets/ph-2.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px; /* Height of the overlay */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  z-index: 2;
+}
+
+#hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  #hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  #mobile-nav.active {
+    transform: translateY(0);
+  }
+  

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David & Carissa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #af7e61;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shadow-lg">
+      <div class="lg:py-4 py-4 flex items-center justify-between lg:px-[5%]">
+        <div class="px-[5%] lg:px-0">
+          <a href="./index.html">
+            <h1 class="heading text-3xl font-medium text-primary">
+              David & Carissa
+            </h1>
+          </a>
+        </div>
+        <!-- desktop navbar -->
+        <nav class="desktop-menu hidden lg:flex gap-5 items-center">
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base"
+            href="/"
+            >Home
+          </a>
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base"
+            href="./about.html"
+            >About</a
+          >
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base mr-5"
+            href="./event.html"
+            >Event</a
+          >
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base mr-5"
+            href="./rsvp.html"
+            >RSVP</a
+          >
+        </nav>
+
+        <button
+          id="hamburger"
+          class="lg:hidden flex flex-col gap-1.5 relative z-[100] pr-[5%]"
+        >
+          <span
+            class="w-6 h-0.5 bg-primary active transition-all duration-300"
+          ></span>
+          <span class="w-6 h-0.5 bg-primary transition-all duration-300"></span>
+          <span class="w-6 h-0.5 bg-primary transition-all duration-300"></span>
+        </button>
+        <!-- mobile navbar -->
+        <nav
+          id="mobile-nav"
+          class="fixed z-[99] inset-x-0 top-0 h-screen bg-black transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col gap-5 justify-center items-center text-2xl text-secondary lg:text-lg"
+        >
+          <a
+            class="hover:scale-[1.1] duration-200 ease text-xl"
+            href="./meet.html"
+            >Home
+          </a>
+          <a
+            class="hover:scale-[1.1] duration-200 ease text-xl"
+            href="./about.html"
+            >About</a
+          >
+          <a
+            class="hover:scale-[1.1] duration-200 ease text-xl"
+            href="./projects.html"
+            >Event</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero flex flex-col lg:flex-row">
+        <div class="lg:w-1/3 p-5 lg:p-0">
+          <img src="./assets/IMG_1831.JPG" alt="David & Carissa" />
+        </div>
+        <div class="lg:w-1/3 flex flex-col justify-center items-center">
+          <span class="heading md:text-xl lg:text-2xl"
+            >We’re Getting Married</span
+          >
+          <h2
+            class="heading text-center text-[42px] md:text-[62px] lg:text-[86px] mt-3 md-mt-5 lg:mt-0 leading-[3rem] lg:leading-[6rem] text-primary"
+          >
+            David<br />
+            & <br />
+            Carissa
+          </h2>
+          <span class="heading text-lg lg:text-4xl font-medium opacity-70 mt-5"
+            >Saturday, 1 March, 2025</span
+          >
+          <a
+            href="https://logwork.com/countdown-timer"
+            class="countdown-timer mt-10"
+            data-timezone="America/Indiana/Indianapolis"
+            data-date="2025-03-01 15:00"
+            ><span>Time Left</span></a
+          >
+        </div>
+
+        <div class="lg:w-1/3 flex flex-col gap-5 mt-10">
+          <div class="flex justify-center lg:justify-start lg:items-end h-1/3">
+            <p
+              class="text-xs leading-[1.5rem] opacity-70 w-1/2 text-center lg:text-start"
+            >
+              Vivamus suscipit tortor eget felis porttitor volutpat. Mauris
+              blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus
+              magna justo, lacinia eget consectetur sed.
+            </p>
+          </div>
+          <div class="flex items-start h-1/3">
+            <a
+              href="./rsvp.html"
+              class="bg-black opacity-80 hover:opacity-60 duration-200 rounded-full w-[100px] h-[100px] flex items-center justify-center text-white text-lg"
+              >RSVP</a
+            >
+          </div>
+          <div class="flex items-end justify-center lg:justify-end h-1/3">
+            <img src="./assets/wedding-4.jpg" class="w-[250px]" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-32 ">
+        <h2 class="heading text-2xl lg:text-6xl opacity-60 text-center px-5">When & Where</h2>
+        <div class="flex flex-col lg:flex-row gap-10 mt-20 p-5  md:px-[6%] lg:px-[12%]">
+          <div>
+            <span class="heading text-lg lg:text-2xl opacity-70"> Date </span>
+            <p class="mt-6 opacity-70 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
+              finibus nisi, sed dictum eros.
+            </p>
+            <div class="flex items-center gap-10 mt-5">
+              <img src="./assets/arrow.png" class="w-1/3" alt="" />
+              <span class="heading w-2/3 text-right text-2xl opacity-70">
+                March 1, 2025
+              </span>
+            </div>
+          </div>
+          <div>
+            <span class="heading text-lg lg:text-2xl opacity-70"> Time </span>
+            <p class="mt-6 opacity-70 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
+              finibus nisi, sed dictum eros.
+            </p>
+            <div class="flex items-center gap-10 mt-5">
+              <img src="./assets/arrow.png" class="w-1/3" alt="" />
+              <span class="heading w-2/3 text-right text-2xl opacity-70">
+                2:00 - 5:00 PM
+              </span>
+            </div>
+          </div>
+          <div>
+            <span class="heading text-lg lg:text-2xl opacity-70"> Where </span>
+            <p class="mt-6 opacity-70 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
+              finibus nisi, sed dictum eros.
+            </p>
+            <div class="flex items-center gap-10 mt-5">
+              <img src="./assets/arrow.png" class="w-1/3" alt="" />
+              <span class="heading w-2/3 text-right font-medium opacity-70">
+                MISSION HOUSE MINISTRIES 734 W 100 S huntington, Indiana 46750
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-32 px-5">
+        <div class="lg:w-1/2 mx-auto">
+          <h2 class="heading text-2xl lg:text-6xl opacity-60 text-left">How We Met</h2>
+          <p class="mt-5 opacity-70 leading-[2rem] text-sm lg:text-base">
+            God truly wrote our story. As most of you know what God has been
+            doing in our lives. We will be publicly starting a podcast and we
+            will start off it with sharing our story more in detail as time
+            ensues. Here are some photos in the meantime to capture the essence
+            of our lives together.
+          </p>
+        </div>
+        <div class="place-items-center p-[10%]">
+          <img src="./assets/ph-1.jpg" alt="">
+        </div>
+      </section>
+
+      <section class="footer-section flex justify-center ">
+        <div class="overlay"></div>
+        <div class="content relative z-3">
+          <h2 class="heading text-2xl lg:text-6xl text-center pt-20 opacity-70 capitalize">We're so excited <br>
+            to celebrate with you!</h2>
+          <p class="heading text-lg lg:text-2xl text-center pt-5 lg:pt-10 ">KINDLY RSVP BY FEBRUARY 14, 2025</p>
+          <div class="flex justify-center pt-5">
+            <a
+              href="./rsvp.html"
+              class="bg-black opacity-80 hover:opacity-70 duration-200 rounded-full w-[100px] h-[100px] flex items-center justify-center text-white text-lg"
+              >RSVP</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
