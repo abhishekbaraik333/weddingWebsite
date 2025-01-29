@@ -1,13 +1,12 @@
-*{
-    font-family: "Raleway", serif;
+* {
+  font-family: "Raleway", serif;
 }
 
-.heading{
-    font-family: "Cormorant Garamond", serif;
-
+.heading {
+  font-family: "Cormorant Garamond", serif;
 }
 
-.footer-section{
+.footer-section {
   background: url(./assets/ph-2.jpg) no-repeat center center/cover;
   height: 100vh;
   position: relative;
@@ -19,23 +18,72 @@
   left: 0;
   width: 100%;
   height: 600px; /* Height of the overlay */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
   z-index: 2;
 }
 
 #hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-  }
-  
-  #hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  #hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-  
-  #mobile-nav.active {
-    transform: translateY(0);
-  }
-  
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+#hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 20px;
+  z-index: 3;
+  background: #e9d1c4;
+  transform: translateY(-100%);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in;
+}
+
+#mobile-nav.active {
+  transform: translateY(-30%);
+  transform: translateX(-30%);
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 160%; /* Aspect ratio (height/width) of the iframe */
+}
+
+/* Make the iframe responsive */
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.bento {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr); /* Set width for each column */
+  grid-template-rows: repeat(4,1fr);/* Set height for each row */
+  gap: 10px; /* Space between grid items */
+}
+
+.bento div img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
