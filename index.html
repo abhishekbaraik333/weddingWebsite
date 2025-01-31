@@ -13,15 +13,16 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
     <style type="text/tailwindcss">
-      @theme {    
+      @theme {
         --color-primary: #af7e61;
       }
     </style>
   </head>
   <body>
     <header class="shadow-lg relative sticky top-0 bg-white z-[1000]">
-      <div class="lg:py-4 py-4 flex items-center justify-between lg:px-[5%] relative bg-white">
-
+      <div
+        class="lg:py-4 py-4 flex items-center justify-between lg:px-[5%] relative bg-white"
+      >
         <div class="px-[5%] lg:px-0">
           <a href="./index.html">
             <h1 class="heading text-3xl font-medium text-primary">
@@ -42,12 +43,17 @@
             >Engagement Day</a
           >
           <a
-            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base mr-5"
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base"
             href="./wedding.html"
             >Wedding Day</a
           >
           <a
-            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base mr-5"
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base"
+            href="https://www.honeyfund.com/site/sain-ostlund-03-01-2025"
+            >Wedding Registry</a
+          >
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base"
             href="./rsvp.html"
             >RSVP</a
           >
@@ -66,28 +72,33 @@
         <!-- mobile navbar -->
         <nav
           id="mobile-nav"
-          class="fixed z-[99] duration-300 lg:hidden flex flex-col gap-5 justify-center items-center text-2xl text-secondary lg:text-lg"
+          class="fixed z-[99] duration-300 lg:hidden flex flex-col gap-5 justify-center items-end text-2xl text-secondary lg:text-lg"
         >
-        <a
-        class="hover:scale-[1.05] hover:text-primary duration-200 ease text-xl"
-        href="/"
-        >Home
-      </a>
-      <a
-            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base"
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-xl mr-10"
+            href="/"
+            >Home
+          </a>
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-xl mr-10 "
             href="./engagement.html"
             >Engagement Day</a
           >
           <a
-            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-base mr-5"
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-xl mr-10"
             href="./wedding.html"
             >Wedding Day</a
           >
-          
-        class="hover:scale-[1.05] hover:text-primary duration-200 ease text-xl"
-        href="./rsvp.html"
-        >RSVP</a
-      >
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-xl mr-10"
+            href="https://www.honeyfund.com/site/sain-ostlund-03-01-2025"
+            >Wedding Registry</a
+          >
+          <a
+            class="hover:scale-[1.05] hover:text-primary duration-200 ease text-xl mr-10"
+            href="./rsvp.html"
+            >RSVP</a
+          >
         </nav>
       </div>
     </header>
@@ -95,7 +106,7 @@
     <main>
       <section class="hero flex flex-col lg:flex-row">
         <div class="lg:w-1/3 p-5 lg:p-0">
-          <img src="./assets/IMG_1831.JPG" alt="David & Carissa" />
+          <img src="./assets/86E12F19-4D4B-45F1-B79A-41912D5DEE9D.jpeg" alt="David & Carissa" />
         </div>
         <div class="lg:w-1/3 flex flex-col justify-center items-center">
           <span class="heading md:text-xl lg:text-2xl"
@@ -124,40 +135,35 @@
           <div class="flex justify-center lg:justify-start lg:items-end h-1/3">
             <p
               class="text-xs leading-[1.5rem] opacity-70 w-1/2 text-center lg:text-start"
-            >
-            
-            </p>
+            ></p>
           </div>
-          
+
           <div class="flex items-end justify-center lg:justify-end h-1/3">
             <img src="./assets/together.jpeg" class="w-[250px]" alt="" />
           </div>
         </div>
       </section>
 
-      <section class="mt-32 ">
-        <h2 class="heading text-2xl lg:text-6xl opacity-60 text-center px-5">When & Where</h2>
-        <div class="flex flex-col lg:flex-row gap-10 mt-20 p-5  md:px-[6%] lg:px-[12%]">
-          <div class="lg:w-1/3 ">
+      <section class="mt-32">
+        <h2 class="heading text-2xl lg:text-6xl opacity-60 text-center px-5">
+          When & Where
+        </h2>
+        <div
+          class="flex flex-col lg:flex-row gap-10 mt-20 p-5 md:px-[6%] lg:px-[12%]"
+        >
+          <div class="lg:w-1/3">
             <span class="heading text-lg lg:text-2xl opacity-70"> Date </span>
-            <p class="mt-6 opacity-70 text-lg">
-              March 1, 2025
-            </p>
+            <p class="mt-6 opacity-70 text-lg">March 1, 2025</p>
 
             <div class="flex items-center gap-10 mt-5">
-
               <img src="./assets/arrow.png" class="w-1/3" alt="" />
-              
             </div>
           </div>
           <div class="lg:w-1/3">
             <span class="heading text-lg lg:text-2xl opacity-70"> Time </span>
-            <p class="mt-6 opacity-70 text-lg">
-              2:00 - 5:00 PM
-            </p>
+            <p class="mt-6 opacity-70 text-lg">2:00 - 5:00 PM</p>
             <div class="flex items-center gap-10 mt-5">
               <img src="./assets/arrow.png" class="w-1/3" alt="" />
-              
             </div>
           </div>
           <div class="lg:w-1/3">
@@ -167,7 +173,6 @@
             </p>
             <div class="flex items-center gap-10 mt-5">
               <img src="./assets/arrow.png" class="w-1/3" alt="" />
-              
             </div>
           </div>
         </div>
@@ -175,7 +180,9 @@
 
       <section class="mt-32 px-5">
         <div class="lg:w-1/2 mx-auto">
-          <h2 class="heading text-2xl lg:text-6xl opacity-60 text-left">How We Met</h2>
+          <h2 class="heading text-2xl lg:text-6xl opacity-60 text-left">
+            How We Met
+          </h2>
           <p class="mt-5 opacity-70 leading-[2rem] text-sm lg:text-base">
             God truly wrote our story. As most of you know what God has been
             doing in our lives. We will be publicly starting a podcast and we
@@ -186,91 +193,112 @@
         </div>
         <div class="items-center lg:px-[5%] bento pb-20">
           <div class="row-span-2">
-            <img class="reveal" src="./assets/pic-2.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-2.jpeg" alt="" />
           </div>
           <div class="col-span-2 row-span-1">
-            <img class="reveal" src="./assets/pic-1.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-1.jpeg" alt="" />
           </div>
           <div class="row-span-2">
-            <img class="reveal" src="./assets/pic-3.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-3.jpeg" alt="" />
           </div>
           <div class="col-span-2 row-span-1">
-            <img class="reveal" src="./assets/pic-8.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-8.jpeg" alt="" />
           </div>
           <div class="row-span-2">
-            <img class="reveal" src="./assets/pic-4.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-4.jpeg" alt="" />
           </div>
           <div class="col-span-2 row-span-1">
-            <img class="reveal" src="./assets/pic-13.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-13.jpeg" alt="" />
           </div>
           <div class="row-span-2">
-            <img class="reveal" src="./assets/pci-5.jpeg" alt="">
+            <img class="reveal" src="./assets/pci-5.jpeg" alt="" />
           </div>
           <div class="col-span-2 row-span-1">
-            <img class="reveal" src="./assets/pic-16.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-16.jpeg" alt="" />
           </div>
           <div class="row-span-2">
-            <img class="reveal" src="./assets/pic-6.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-6.jpeg" alt="" />
           </div>
           <div class="col-span-2 row-span-1">
-            <img class="reveal" src="./assets/pic-18.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-18.jpeg" alt="" />
           </div>
           <div class="row-span-2">
-            <img class="reveal" src="./assets/pic-17.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-17.jpeg" alt="" />
           </div>
           <div class="col-span-2 row-span-1">
-            <img class="reveal" src="./assets/pic-10.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-10.jpeg" alt="" />
           </div>
           <div class="row-span-2">
-            <img class="reveal" src="./assets/pic-9.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-9.jpeg" alt="" />
           </div>
           <div class="col-span-2 row-span-1">
-            <img class="reveal" src="./assets/pic-12.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-12.jpeg" alt="" />
           </div>
           <div class="row-span-2">
-            <img class="reveal" src="./assets/pic-14.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-14.jpeg" alt="" />
           </div>
           <div class="col-span-2 row-span-1">
-            <img class="reveal" src="./assets/pic-11.jpeg" alt="">
+            <img class="reveal" src="./assets/pic-11.jpeg" alt="" />
           </div>
-
         </div>
       </section>
 
       <section class="guestbook-section">
         <div class="guestbook-content">
           <h2 class="guestbook-title heading">Join Our Digital Guestbook</h2>
-          <p class="guestbook-subtitle">Scan the QR code below to leave your wishes!</p>
+          <p class="guestbook-subtitle">
+            Scan the QR code below to leave your wishes!
+          </p>
           <div class="guestbook-qrcode flex justify-center">
-            <img src="./assets/event-qr-code.png" alt="Digital Guestbook QR Code" />
+            <img
+              src="./assets/event-qr-code.png"
+              alt="Digital Guestbook QR Code"
+            />
           </div>
-          <a href="https://app.kululu.com/2itero" class="guestbook-button">Upload Your Snapshots</a>
+          <a href="https://app.kululu.com/2itero" class="guestbook-button"
+            >Upload Your Snapshots</a
+          >
         </div>
       </section>
-      
 
       <section class="md:px-[12%] pt-[5%] pb-[10%] px-5">
-        <div class="border-primary border flex flex-col items-center justify-center p-5">
-          <img src="./assets/wedding-24.png" alt="">
-          <h2 class="heading text-3xl lg:text-6xl my-8 ">Registry</h2>
-       
+        <div
+          class="border-primary border flex flex-col items-center justify-center p-5"
+        >
+          <img src="./assets/wedding-24.png" alt="" />
+          <h2 class="heading text-3xl lg:text-6xl my-8">Registry</h2>
+
           <div class="flex flex-col gap-5 my-5 items-center">
-            <a href="https://www.amazon.com/wedding/registry/3J5OYYQ0FDRO8" class="bg-[#4A5349] px-8 py-4 text-white uppercase hover:bg-transparent hover:border-[#4A5349] border hover:text-black duration-300">
+            <a
+              href="https://www.amazon.com/wedding/registry/3J5OYYQ0FDRO8"
+              class="bg-[#4A5349] px-8 py-4 text-white uppercase hover:bg-transparent hover:border-[#4A5349] border hover:text-black duration-300"
+            >
               browse registry
             </a>
-            <a href="https://www.honeyfund.com/site/sain-ostlund-03-01-2025" class="border-[#4A5349] border px-8 py-4 uppercase hover:bg-[#4A5349] hover:border-[#4A5349] border hover:text-white duration-300 text-center">
+            <a
+              href="https://www.honeyfund.com/site/sain-ostlund-03-01-2025"
+              class="border-[#4A5349] border px-8 py-4 uppercase hover:bg-[#4A5349] hover:border-[#4A5349] border hover:text-white duration-300 text-center"
+            >
               contribute to our honeymoon fund
             </a>
           </div>
         </div>
       </section>
 
-      <section class="footer-section flex justify-center ">
+      <section class="footer-section flex justify-center">
         <div class="overlay"></div>
         <div class="content relative z-3">
-          <h2 class="heading text-2xl lg:text-6xl text-center opacity-70 capitalize">We're so excited <br>
-            to celebrate with you!</h2>
-          <p class="heading text-lg lg:text-2xl font-medium pt-5 text-center pt-5 lg:pt-10 ">KINDLY RSVP BY FEBRUARY 14, 2025</p>
+          <h2
+            class="heading text-2xl lg:text-6xl text-center opacity-70 capitalize"
+          >
+            We're so excited <br />
+            to celebrate with you!
+          </h2>
+          <p
+            class="heading text-lg lg:text-2xl font-medium pt-5 text-center pt-5 lg:pt-10"
+          >
+            KINDLY RSVP BY FEBRUARY 14, 2025
+          </p>
           <div class="flex justify-center pt-5">
             <a
               href="./rsvp.html"
