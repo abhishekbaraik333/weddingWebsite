@@ -91,7 +91,7 @@
 }
 
 .guestbook-section {
-  background: linear-gradient(to bottom, #fef9fa, #f7e7ea); 
+  background: linear-gradient(to bottom, #ffffff, #f4e2d6); 
   padding: 3rem 1rem;
   text-align: center;
   border-radius: 1rem; 
@@ -100,7 +100,6 @@
 
 .guestbook-title {
   font-size: 2rem;
-  color: #e63946; /* Deep rose color */
   margin-bottom: 0.5rem;
 }
 
@@ -125,19 +124,19 @@
 .guestbook-button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background: #e63946; /* Rose background */
+  background: #AF7E60; /* Rose background */
   color: #fff; /* White text */
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 2rem; /* Pill-shaped button */
-  box-shadow: 0 4px 6px rgba(230, 57, 70, 0.3);
+  /* box-shadow: 0 4px 6px rgba(230, 57, 70, 0.3); */
   transition: all 0.3s ease-in-out;
 }
 
 .guestbook-button:hover {
-  background: #d62839; /* Darker rose for hover */
-  box-shadow: 0 6px 10px rgba(214, 40, 57, 0.5);
+  background: #AF7E60; /* Darker rose for hover */
+  box-shadow: 0 6px 10px #deb49a;
   transform: translateY(-3px); /* Lift effect */
 }
 
