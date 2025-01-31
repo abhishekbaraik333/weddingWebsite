@@ -90,6 +90,82 @@
   object-fit: cover;
 }
 
+.guestbook-section {
+  background: linear-gradient(to bottom, #fff5f7, #ffe5eb); /* Soft pink gradient */
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 1rem; /* Rounded corners for a soft look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.guestbook-title {
+  font-size: 2rem;
+  color: #e63946; /* Deep rose color */
+  margin-bottom: 0.5rem;
+}
+
+.guestbook-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d; /* Muted gray */
+  margin-bottom: 2rem;
+}
+
+.guestbook-qrcode img {
+  width: 150px; /* Adjust size */
+  height: 150px;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem; /* Slightly rounded edges */
+  transition: transform 0.3s ease-in-out;
+}
+
+.guestbook-qrcode img:hover {
+  transform: scale(1.1); /* Subtle zoom effect */
+}
+
+.guestbook-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #e63946; /* Rose background */
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem; /* Pill-shaped button */
+  box-shadow: 0 4px 6px rgba(230, 57, 70, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.guestbook-button:hover {
+  background: #d62839; /* Darker rose for hover */
+  box-shadow: 0 6px 10px rgba(214, 40, 57, 0.5);
+  transform: translateY(-3px); /* Lift effect */
+}
+
+
+.guestbook-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.guestbook-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+
+
 @media screen and (max-width:767px) {
   .footer-section {
     background: url(./assets/footer.jpeg) no-repeat ;
