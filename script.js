@@ -1,3 +1,7 @@
+window.addEventListener("load", function() {
+  document.getElementById("loader").style.display = "none";
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.getElementById("hamburger");
   const mobileNav = document.getElementById("mobile-nav");
